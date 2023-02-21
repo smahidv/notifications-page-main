@@ -27,7 +27,7 @@
 <body>
   <div role="main-content" class="main-content">
 
-    <div class="flex-children-inline margin-auto">
+    <div class="flex-children-inline">
       <div class="flex-children-inline ">
         <h1>Notifications</h1>
         <div class="number-of-notifictaion">3</div>
@@ -58,55 +58,61 @@
               class="period"></span> </p>
           <p class="time">1 day ago</p>
         </div>
-      </div>
-      <div class="commentaire-content-item | flex-children-inline">
-        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin avatar">
-        <div class="commentaire-content-item__text">
-          <p class="text"><b>Rizky Hasanuddin</b> sent you a private message</p>
-          <p class="time">5 days ago</p>
-          <div class="rizky-message">
-            <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-              I'm already having lots of fun and improving my game.</p>
-          </div>
-        </div>
-      </div>
-      <div class="commentaire-content-item | flex-children-inline">
-        <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith avatar">
-        <div class="commentaire-content-item__text">
-          <p class="text"><b>Kimberly Smith</b> commented on your picture</p>
-          <p class="time">1 week ago</p>
-        </div>
-        <img class="margin-auto" src="assets/images/image-chess.webp" alt="">
-      </div>
-      <div class="commentaire-content-item | flex-children-inline">
-        <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson avatar">
-        <div class="commentaire-content-item__text">
-          <p class="text"><b>Nathan Peterson</b> reacted to your recent post<span class="grey"> 5 end-game strategies to
-              increase your win rate</span>
-          </p>
-          <p class="time">2 weeks ago</p>
-        </div>
-      </div>
-      <div class="commentaire-content-item | flex-children-inline">
-        <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim avatar">
-        <div class="commentaire-content-item__text">
-          <p class="text"><b>Anna Kim</b> left the group <span class="blue">Chess Club</span></p>
-          <p class="time">3 weeks ago</p>
+    </div>
+    <div class="commentaire-content-item | flex-children-inline">
+      <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin avatar">
+      <div class="commentaire-content-item__text">
+        <p class="text"><b>Rizky Hasanuddin</b> sent you a private message</p>
+        <p class="time">5 days ago</p>
+        <div class="rizky-message">
+          <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.</p>
         </div>
       </div>
     </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Smahidv</a>.
+    <div class="commentaire-content-item | flex-children-inline">
+      <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith avatar">
+      <div class="commentaire-content-item__text">
+        <p class="text"><b>Kimberly Smith</b> commented on your picture</p>
+        <p class="time">1 week ago</p>
+      </div>
+      <img class="margin-auto" src="assets/images/image-chess.webp" alt="">
+    </div>
+    <div class="commentaire-content-item | flex-children-inline">
+      <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson avatar">
+      <div class="commentaire-content-item__text">
+        <p class="text"><b>Nathan Peterson</b> reacted to your recent post<span class="grey"> 5 end-game strategies to
+            increase your win rate</span>
+        </p>
+        <p class="time">2 weeks ago</p>
+      </div>
+    </div>
+    <div class="commentaire-content-item | flex-children-inline">
+      <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim avatar">
+      <div class="commentaire-content-item__text">
+        <p class="text"><b>Anna Kim</b> left the group <span class="blue">Chess Club</span></p>
+        <p class="time">3 weeks ago</p>
+      </div>
     </div>
   </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Smahidv</a>.
+  </div>
+  </div>
   <script>
-       function read(){
-        var data = document.getElementsByClassName("Neutral-Light-grayish-blue-bg");
-        for(var i=0 ;i<data.length;i++){
-       data[i].style.backgroundColor="initial";
-        }
-       }
+    function read() {
+      var data = document.getElementsByClassName("Neutral-Light-grayish-blue-bg");
+      var data2 = document.querySelectorAll("span.period");
+
+      for (let i = 0; i < data.length; i++) {
+        data[i].style.backgroundColor = "initial";
+
+      }
+      for (let j = 0; j < data2.length; j++) {
+        data2[j].style.display = "none";
+      }
+    }
   </script>
 </body>
 
