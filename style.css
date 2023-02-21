@@ -1,0 +1,116 @@
+@import url('https://fonts.google.com/specimen/Plus+Jakarta+Sans');
+:root{
+/* Colors */
+--Primary-Red: hsl(1, 90%, 64%);
+--Primary-Blue: hsl(219, 85%, 26%);
+--Neutral-White: hsl(0, 0%, 100%);
+--Neutral-Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Neutral-Light-grayish-blue-1: hsl(211, 68%, 94%);
+--bg-body: hsl(262, 31%, 95%);
+--Neutral-Grayish-blue: hsl(219, 14%, 63%);
+--Neutral-Dark-grayish-blue: hsl(219, 12%, 42%);
+--Neutral-Very-dark-blue: hsl(224, 21%, 14%);
+/* Font */
+--ff: 'Inter', sans-serif;
+--fw-bold:800;
+--fw-light:500;
+/* flex */
+--flex-children-inline:flex;
+}
+body{
+    background-color:var(--bg-body) ;
+}
+p{
+    font-family: var(--ff);
+    font-size:clamp(10px,14px,1em);
+}
+img{
+    height: clamp(50px,60px,90px);
+}
+.flex-children-inline{
+    display:var(--flex-children-inline);
+    align-items: center;
+}
+.main-content{
+    width:min(900px,100%);
+    margin:10vh auto;
+    background-color: var(--Neutral-White);
+    padding:clamp(5px,1em,5em);
+    border-radius:.5rem;
+}
+@media (max-width:650px){
+    .main-content{
+        margin:0 ;
+    }
+}
+h1{
+    font-family: var(--ff);
+    font-size: clamp(22px , 1rem,3rem);
+}
+.number-of-notifictaion{
+    background-color: var(--Primary-Blue);
+    color: var(--Neutral-White);
+    font-weight: var(--fw-bold);
+    border-radius: .5rem;
+    padding: .2em 1em;
+    margin-left: 1em;
+}
+.margin-auto {
+    margin-left:auto;
+    cursor: pointer;
+}
+.commentaire-section{
+    margin-top: 1.5em;
+}
+.commentaire-content-item:not(:first-child){
+    margin-top: .5em;
+}
+.commentaire-content-item{
+    width: 100%;
+    padding: 1em;
+    border-radius: .5rem;
+}
+.Neutral-Light-grayish-blue-bg{
+    background-color: var(--Neutral-Very-light-grayish-blue);
+}
+.rizky-message{
+    border:.1px solid var(--Neutral-Grayish-blue);
+    padding:1em;
+    border-radius:2px;
+    margin-top: .7em;
+    cursor: pointer;
+}
+.rizky-message:hover{
+    background-color: var(--Neutral-Light-grayish-blue-1);
+}
+.commentaire-content-item{
+    align-items: flex-start;
+    gap:1em;
+}
+.time{
+    color:var(--Neutral-Grayish-blue);
+}
+p:not(b){
+    color:var(--Neutral-Dark-grayish-blue);
+}
+p.text b{
+    color:black;
+}
+span{
+    font-weight: var(--fw-bold);
+}
+span.blue{
+    color: var(--Primary-Blue);
+}
+span.period{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--Primary-Red);
+    width: 8px;
+    height:8px;
+    translate: 10px -2px;
+
+}
+b,span.blue{
+    cursor:pointer;
+}
