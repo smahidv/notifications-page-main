@@ -30,7 +30,7 @@
     <div class="flex-children-inline">
       <div class="flex-children-inline ">
         <h1>Notifications</h1>
-        <div class="number-of-notifictaion">3</div>
+        <div class="number-of-notifictaion" id="number-of-notifictaion">3</div>
       </div>
       <p class="margin-auto" onclick="read()">Mark all as read</p>
     </div>
@@ -104,13 +104,12 @@
     function read() {
       var data = document.getElementsByClassName("Neutral-Light-grayish-blue-bg");
       var data2 = document.querySelectorAll("span.period");
-
+      document.getElementById("number-of-notifictaion").innerHTML *= 0;
       for (let i = 0; i < data.length; i++) {
         data[i].style.backgroundColor = "initial";
-
-      }
-      for (let j = 0; j < data2.length; j++) {
-        data2[j].style.display = "none";
+        for (let j = 0; j < data2.length; j++) {
+          data2[j].style.display = "none";
+        }
       }
     }
   </script>
